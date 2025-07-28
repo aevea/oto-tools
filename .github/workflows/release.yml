@@ -13,7 +13,7 @@ jobs:
       - name: Check out code into the Go module directory
         uses: actions/checkout@v1
       - name: Release Notary
-        uses: docker://outillage/release-notary@sha256:a7f3c24e5b24caa8d25e259837add805ba9868f913bb8c678cd787a2ed5ebc9a
+        uses: docker://outillage/release-notary@sha256:73369b751b24b82a69d1bbc28fbe4f8d208a131324a4bc83adb6c41f000e63ca
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   goreleaser:
